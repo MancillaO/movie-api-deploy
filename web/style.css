@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+    background-color: #141414;
+    color: #fff;
+    padding: 20px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+article {
+    background-color: #181818;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+}
+
+article:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+article h2 {
+    font-size: 1.3rem;
+    padding: 20px 10px;
+    font-weight: bold;
+    /* Mejorando la visualización del título */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+}
+
+article img {
+    width: 100%;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+}
+
+article p {
+    padding: 10px 10px;
+    color: #ccc;
+    font-size: 1.1rem;
+    font-weight: 700;
+
+}
+
+button {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    width: calc(100% - 20px);
+}
+
+button:hover {
+    background-color: #960007;
+}
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+
+    article h2 {
+        font-size: 0.9rem;
+    }
+}
+
+/* Animación de hover para las tarjetas de películas */
+article:hover img {
+    opacity: 0.7;
+}

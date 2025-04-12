@@ -1,0 +1,32 @@
+{
+  "name": "cursonodejs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./clase-3/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "2.8.5",
+    "express": "5.1.0",
+    "picocolors": "^1.1.1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.23.0",
+    "eslint": "^8.57.1",
+    "eslint-config-standard": "^17.1.0",
+    "globals": "^16.0.0",
+    "nodemon": "^3.1.9",
+    "standard": "^17.1.2",
+    "typescript-eslint": "^8.29.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "standard"
+    ]
+  },
+  "description": ""
+}
