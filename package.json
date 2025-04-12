@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ./clase-3/app.js"
+    "dev": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
