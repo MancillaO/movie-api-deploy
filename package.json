@@ -1,18 +1,24 @@
 {
   "name": "api-movies",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
+  "type": "module",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev:mysql": "nodemon server-with-mysql.js",
+    "dev:local": "nodemon server-with-local.js",
+    "dev:mongo": "nodemon server-with-mongodb.js",
+    "dev": "nodemon app.js",
+    "start": "node server-with-mongodb.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "2.8.5",
+    "dotenv": "16.5.0",
     "express": "5.1.0",
-    "picocolors": "^1.1.1",
+    "mongodb": "6.15.0",
+    "mysql2": "^3.14.0",
     "zod": "^3.24.2"
   },
   "devDependencies": {
