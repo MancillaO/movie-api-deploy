@@ -7,7 +7,7 @@
   <title>Probar API Rest</title>
   <link rel="stylesheet" href="style.css">
   <script type="module">
-    fetch('http://localhost:3000/movies')
+    fetch('http://https://movie-api-3ifg.onrender.com/movies')
       .then(res => res.json())
       .then(movies => {
         const html = movies.map(movie => {
@@ -29,7 +29,7 @@
             const article = e.target.closest('article')
             const id = article.dataset.id
 
-            fetch(`http://localhost:3000/movies/${id}`, {
+            fetch(`http://https://movie-api-3ifg.onrender.com/movies/${id}`, {
               method: 'DELETE'
             })
               .then(res => {
